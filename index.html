@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
 
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>make some magic here!!</h2>
+    <script src="script.js" defer></script>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <div id="content">
+        <div class="phone-card">
+            <h1 id="name">Phonie</h1>
+            <div id="form-holder">
+                <form action="" method="post">
+                    <label for="phone" id="phonenum-label">Enter a Phone Number</label> <br><br>
+                    <input type="number" id="phonenum-input" list="phoneCode" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </form>
+                <datalist id="phoneCode">
+                    <option>0703</option>
+                    <option>0706</option>
+                    <option>0803</option>
+                    <option>0806</option>
+                    <option>0810</option>
+                    <option>0813</option>
+                    <option>0814</option>
+                    <option>0816</option>
+                    <option>0903</option>
+                    <option>0816</option>
+
+                    <option>0705</option>
+                    <option>0805</option>
+                    <option>0807</option>
+                    <option>0811</option>
+                    <option>0815</option>
+                    <option>0905</option>
+
+                    <option>0701</option>
+                    <option>0708</option>
+                    <option>0808</option>
+                    <option>0812</option>
+                    <option>0902</option>
+                    <option>0907</option>
+                    <option>0901</option>
+
+                    <option>0809</option>
+                    <option>0817</option>
+                    <option>0818</option>
+                    <option>0908</option>
+                    <option>0909</option>
+
+                    <option>0804</option>
+                    <option>0702</option>
+                </datalist>
+            </div>
+
+            <div id="detectbtn-div">
+                <button id="detectbtn">Detect</button>
+            </div>
+
+            <div id="img">
+                <img src="/images/blank.png" width="250" height="250">
+            </div>
+        </div>
+
+    </div>
+ 
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
