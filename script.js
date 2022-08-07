@@ -4,7 +4,7 @@ document.getElementById('detectbtn').addEventListener("click", check);
 function check(){
   let phoneNumber= document.getElementById("phonenum-input").value
   while (validateNumber(phoneNumber)== false){
-    alert("Hi Chief! \n\nThe Phone number cannot be blank and it MUST be an 11 Digits Nigeria Phone Number \n\n Thanks")
+    alert("Hi Chief! \n\nThe Phone number cannot be blank and it MUST be an 11 Digits Nigeria Phone Number \n\n Thanks ")
     return
   }
 
